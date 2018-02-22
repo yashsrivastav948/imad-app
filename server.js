@@ -11,7 +11,6 @@ app.get('/', function (req, res) {
 
 var aa={ 
 title:'articl_eone',
-heading:`heading`,
     content:`
        <p>this is paragraph one</p>
        <p>this page is created my</p>
@@ -36,13 +35,12 @@ var html=`<html>
     ${content}
     </body>
 </html>
-
-
 `;
     return createtemp;
 }
+
 app.get('/a.html', function (req, res) {
-res.send(createtemp(aa));
+res.send('hello world');
 });
 
 app.get('/b.html', function (req, res) {
