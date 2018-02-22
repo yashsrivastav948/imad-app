@@ -9,9 +9,33 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+var articleone={ 
+    
+    content:`
+       <p>this is paragraph one</p>
+       <p>this page is created my</p>
+       <p>my name is yash srivastava and i am from raebareli, i am doing btech from bharati vidyapeeth pune..and 
+       i learning how to develop app by a good online course by imad hasura</p>`
+       
+};
 
+function createtemp(data){
+var content=data.content;
+var html=`<html>
+    <head>
+    
+    </head>
+    
+    <body>
+        ${content}
+    </div>
+    </body>
+</html>
+`;
+    return createtemp;
+}
 app.get('/a.html', function (req, res) {
-res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
+res.send(createtemp(articleone));
 });
 
 app.get('/b.html', function (req, res) {
