@@ -15,11 +15,11 @@ res.sendFile(path.join(__dirname, 'ui', 'article_one.html'));
 });
 
 app.get('/b.html', function (req, res) {
-res.send("hello this is arcicle two");
+res.sendFile(path.join(__dirname, 'ui', 'article_two.html'));
 });
 
 app.get('/c.html', function (req, res) {
- res.send("hello this is arcicle three");
+ res.sendFile(path.join(__dirname, 'ui', 'article_three.html'));
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
