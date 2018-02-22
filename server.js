@@ -9,8 +9,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-var articleone={ 
-    
+var aa={ 
+title:'articl_eone',
+heading:`heading`,
     content:`
        <p>this is paragraph one</p>
        <p>this page is created my</p>
@@ -20,18 +21,28 @@ var articleone={
 };
 
 function createtemp(data){
+    var title=data.title;
+    
 var content=data.content;
-var html=`
-<html>
-<body>
-       hello this is body 
+var html=`<html>
+    <head>
+        <link href="/ui/style.css" rel="stylesheet" />
+        <title>${title}</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+    
+    </head>
+    
+    <body>
+    ${content}
     </body>
 </html>
+
+
 `;
     return createtemp;
 }
 app.get('/a.html', function (req, res) {
-res.send(createtemp(articleone));
+res.send(createtemp(aa));
 });
 
 app.get('/b.html', function (req, res) {
