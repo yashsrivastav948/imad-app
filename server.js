@@ -22,13 +22,10 @@ var articleone={
 function createtemp(data){
 var content=data.content;
 var html=`<html>
-    <head>
-    
-    </head>
     
     <body>
         ${content}
-    </div>
+    
     </body>
 </html>
 `;
