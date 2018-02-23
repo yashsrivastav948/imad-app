@@ -41,6 +41,11 @@ var html=`<html>
 app.get('/a.html', function (req, res) {
 res.send('hello world');
 });
+var counter=0;
+app.get('/counter',function(req,res){
+   counter=counter+1;
+   res.send(counter.toString());
+});
 
 app.get('/b.html', function (req, res) {
 res.sendFile(path.join(__dirname, 'ui', 'article_two.html'));
