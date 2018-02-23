@@ -4,13 +4,13 @@ var element =document.getElementById('text');
 element.innerHTML='new text inserted by javascipt';
 //moving the image 
 var img=document.getElementById('image');
-var marginleft=0;
+var marginLeft=0;
 function moveright(){
-    marginleft=marginleft+10;
-    img.style.marginleft=marginleft+'px';
+    marginLeft=marginLeft + 10;
+    img.style.marginLeft=marginLeft+'px';
 }
 img.onclick=function(){
   //img.style.marginLeft='100px';  
-var interval=setInterval(moveright,100);
+var interval=setInterval(moveright, 100);
     
 };
