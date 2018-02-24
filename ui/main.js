@@ -19,4 +19,4 @@ var button=getElementById('counter');
 button.onclick=function(){
     counter=counter+1;
     span.innerHTML=counter.toString();
-}
+};
