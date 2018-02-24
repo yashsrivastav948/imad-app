@@ -15,9 +15,9 @@ img.onclick=function(){
 var interval=setInterval(moveright, 50);
     
 };*/
-var button=getElementById('counter');
+var button=document.getElementById('counter');
 button.onclick=function(){
     counter=counter + 1;
-    var span=getElementById('click');
+    var span=document.getElementById('click');
     span.innerHTML=counter.toString();
 };
