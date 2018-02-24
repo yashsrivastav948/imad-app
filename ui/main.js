@@ -18,5 +18,6 @@ var interval=setInterval(moveright, 50);
 var button=getElementById('counter');
 button.onclick=function(){
     counter=counter+1;
+    var span=getElementById('click');
     span.innerHTML=counter.toString();
 };
