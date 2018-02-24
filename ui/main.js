@@ -1,5 +1,5 @@
 console.log('Loaded!');
-var coounter=0;
+var counter=0;
 //changing the text in html
 /*var element =document.getElementById('text');
 element.innerHTML='new text inserted by javascipt';
